@@ -52,7 +52,7 @@ For my fairness analysis I chose to compare the **good/neutral** values and the 
 
 The test statistic I chose was the **difference in RMSE** (RMSE bad - RMSE good/neutral). I went forward with a significance level of 0.05. After running my permuatation test 500 times, I was left with a p-value of 0.0. I rejected the null hypothesis that our model works just as well for both groups. 
 
-<iframe src="assets/perm_test.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/perm_test.html" width=600 height=450 frameBorder=0></iframe>
 
 ---
     
