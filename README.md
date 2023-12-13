@@ -45,5 +45,14 @@ After inputting my best hyperparameters to my function I fit it to the training 
 ---
 
 # Fairness Analysis
-    
+
+For my fairness analysis I chose to compare the **good/neutral** values and the **bad** values of the 'tone' column. The reason I chose to do this is because they had such a significant difference in their corresponding distributions of the 'avg_rating' column that I wanted to explore how this impacted our predictions. Me evaluation was the RMSE of each individual group. 
+
+**Null Hypothesis:** Our model is fair. Its RMSE for reviews marked good/neutral and reviews marked bad are roughly the same. Any differences are due to random chance.
+
+**Alternative Hypothesis:** Our model is unfair. The RMSE for reviews marked good/neutral is lower than for reviews marked bad.
+
+The test statistic I chose was the **difference in RMSE** (RMSE bad - RMSE good/neutral). I went forward with a significance level of 0.05. After running my permuatation test 500 times, I was left with a p-value of 0.0. I reject the null hypothesis that our model works just as well for both groups. 
+
+<iframe src="assets/perm_test.html" width=800 height=600 frameBorder=0></iframe>
     
