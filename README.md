@@ -50,7 +50,7 @@ For my fairness analysis I chose to compare the **good/neutral** values and the 
 
 **Alternative Hypothesis:** Our model is unfair. The RMSE for reviews marked good/neutral is lower than for reviews marked bad.
 
-The test statistic I chose was the **difference in RMSE** (RMSE bad - RMSE good/neutral). I went forward with a significance level of 0.05. After running my permuatation test 500 times, I was left with a p-value of 0.0. I rejected the null hypothesis that our model works just as well for both groups. 
+The test statistic I chose was the **difference in RMSE** (RMSE bad - RMSE good/neutral). I went forward with a significance level of 0.05. After running my permuatation test 500 times, I was left with a p-value of 0.0. I **rejected the null hypothesis** that our model works just as well for both groups. It appears that our model is a better predictor of good/neutral recipes than it is for bad recipes. This my be because the average rating column is skewed to higher values so even with a bad review, the model is likely to make larger errors when predicting.
 
 <iframe src="assets/perm_test.html" width=600 height=450 frameBorder=0></iframe>
 
