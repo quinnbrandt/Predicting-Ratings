@@ -1,9 +1,3 @@
-# Predicting Ratings
-
-By: Quinn Brandt
-
----
-
 # Framing the Problem
 
 The goal of this project is to predict the **response variable: average rating**, of a given recipe using the information from the merged datasets. That is information about the recipe itself, aswell as the individual review of the recipe. This is a problem of **regression** rather than classification. While the review column is ordinal and thus would require a classification problem to predict, the average review column is continuous and can be predicted using a regression model.
